@@ -15,8 +15,49 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LTP-Gg-sRt">
+                                <rect key="frame" x="16" y="314" width="358" height="216"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-up-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="5WV-Nh-eAu">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="cde-sO-ow2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PkM-WV-wxu">
+                                        <rect key="frame" x="0.0" y="72" width="358" height="72"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-left-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="4cc-Et-qCD">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="jbh-1K-vA1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-right-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="hb3-EH-PAk">
+                                                <rect key="frame" x="179" y="0.0" width="179" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="uA7-UT-AYA"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="mF3-sw-TQL">
+                                        <rect key="frame" x="0.0" y="144" width="358" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="qTb-Y8-tfo"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LTP-Gg-sRt" secondAttribute="trailing" constant="16" id="6d8-2I-X8Z"/>
+                            <constraint firstItem="LTP-Gg-sRt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Drb-L9-9rO"/>
+                            <constraint firstItem="LTP-Gg-sRt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SQS-IK-cCx"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -25,6 +66,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow-down-black.png" width="209" height="218"/>
+        <image name="arrow-left-black.png" width="218" height="209"/>
+        <image name="arrow-right-black.png" width="218" height="209"/>
+        <image name="arrow-up-black.png" width="209" height="218"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
