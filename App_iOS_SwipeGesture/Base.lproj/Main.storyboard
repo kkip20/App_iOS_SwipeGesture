@@ -59,6 +59,12 @@
                             <constraint firstItem="LTP-Gg-sRt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SQS-IK-cCx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgViewDown" destination="mF3-sw-TQL" id="9ej-hX-OQk"/>
+                        <outlet property="imgViewLeft" destination="4cc-Et-qCD" id="x49-Qg-iss"/>
+                        <outlet property="imgViewRight" destination="hb3-EH-PAk" id="kwa-FS-SxW"/>
+                        <outlet property="imgViewUp" destination="5WV-Nh-eAu" id="ZmN-ii-7AD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
